@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling.css">
-    <title>To-Do List App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <div class="container">
-        <h2>To-Do List</h2>
-        <form id="todo-form">
-            <input type="text" id="task" placeholder="Add a new task" required>
-            <button type="submit">Add Task</button>
-        </form>
-        <ul id="task-list"></ul>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="app.js"></script>
+  <div class="todo-container">
+    <h1>Todo List</h1>
+    <input type="text" id="todoInput" placeholder="Enter your task...">
+    <button onclick="addTodo()">Add</button>
+    <button onclick="resetInput()">Reset</button>
+    <ul id="todoList">
+    </ul>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
